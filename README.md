@@ -1,22 +1,23 @@
-#bokwoo
-카드유동화
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet" />
   <title>카드 매출 유동화 | 무료 상담 신청</title>
-  <meta name="description" content="사업자 대출 막혀도 가능합니다. 카드 매출 채권 유동화로 운영자금 즉시 확보!" />
+  <meta name="description" content="사업자 대출이 막혀도 가능합니다. 카드 매출 채권 유동화로 운영자금 즉시 확보! 신용등급 무관, 담보/보증 불필요, 신용점수 영향 없음." />
   <style>
     :root{--brand-red:#d50000;--brand-blue:#1034a6;--ink:#0c1a2a;--muted:#5a5f6a;--hero:#e9f5ff;--section:#f7f7fb;--ok:#0b875b;--purple:#5e2ced;--btn-yellow:#ffcc00;--btn-dark:#0e2237}
     *{box-sizing:border-box}
-    body{margin:0;font-family:'Pretendard','Noto Sans KR',sans-serif;background:#f6f9fc;color:#111;line-height:1.6}
+    body{margin:0;font-family:'Pretendard','Noto Sans KR',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f6f9fc;color:#111;line-height:1.6}
     a{color:inherit}
     .container{max-width:1120px;margin:0 auto;padding:0 20px}
-    header.hero{background:var(--hero);padding:60px 20px;text-align:center}
+
+    /* HERO */
+    header.hero{background:var(--hero);padding:64px 20px;text-align:center}
     .hero .wrap{max-width:980px;margin:0 auto}
     .eyebrow{color:#41566e;font-weight:700}
-    header.hero h1{font-family:'Black Han Sans','Noto Sans KR',sans-serif;font-size:56px;line-height:1.08;color:#103464;margin:14px 0}
+    header.hero h1{font-family:'Black Han Sans','Noto Sans KR',sans-serif;font-size:56px;line-height:1.08;color:#103464;margin:16px 0 10px}
     header.hero h1 .accent{color:var(--brand-red)}
     header.hero h1 strong{font-weight:900;letter-spacing:-1px}
     .checklist{margin-top:22px;display:grid;gap:10px;justify-content:center}
@@ -29,6 +30,8 @@
     .btn.outline{background:var(--btn-dark);color:#fff;border-color:var(--btn-dark)}
     .btn.primary{background:var(--purple);color:#fff}
     .btn.primary:after{content:" →";font-weight:900}
+
+    /* SECTION / CARD */
     section{padding:56px 0}
     section.alt{background:var(--section)}
     h2{font-size:28px;margin:0 0 12px;color:var(--brand-blue);text-align:center}
@@ -37,13 +40,12 @@
     .card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(0,0,0,.1)}
     .card b{display:block;margin-bottom:6px;font-size:17px}
     .muted{color:var(--muted)}
-    /* FAQ 아이콘 행 스타일 */
-    .faq .row{display:flex;align-items:center;gap:10px;margin-bottom:6px}
-    .faq .ico{width:22px;height:22px;display:inline-block}
 
-    .muted{color:var(--muted)}
+    /* PROCESS */
     .step{display:flex;gap:12px;align-items:flex-start}
     .step .num{background:var(--brand-blue);color:#fff;font-weight:800;border-radius:9999px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;text-align:center}
+
+    /* FORM */
     section.form-area{background:#fff;max-width:860px;margin:40px auto;padding:40px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
     section.form-area h2{text-align:center;font-size:22px;margin-bottom:24px}
     form{display:grid;grid-template-columns:1fr 1fr;gap:20px}
@@ -53,11 +55,22 @@
     textarea{min-height:80px}
     .consent{grid-column:1/-1;font-size:13px}
     .submit{grid-column:1/-1;text-align:center}
+
+    /* FAQ */
+    .faq .row{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+    .faq .ico{width:22px;height:22px;display:inline-block}
+
     footer{text-align:center;font-size:14px;color:#777;padding:30px}
-    @media (max-width:980px){.grid-3{grid-template-columns:1fr}form{grid-template-columns:1fr}header.hero h1{font-size:44px}}
+
+    @media (max-width:980px){
+      .grid-3{grid-template-columns:1fr}
+      form{grid-template-columns:1fr}
+      header.hero h1{font-size:44px}
+    }
   </style>
 </head>
 <body>
+  <!-- HERO -->
   <header class="hero">
     <div class="wrap">
       <div class="eyebrow">사업자 대출이 안된다구요? 금융사 대출이 어렵다구요?<br/>자재 사야하는데 현금흐름이 어려우신가요?</div>
@@ -79,6 +92,7 @@
     </div>
   </header>
 
+  <!-- WHY -->
   <section class="alt">
     <div class="container">
       <h2>왜 유동화인가요?</h2>
@@ -90,6 +104,7 @@
     </div>
   </section>
 
+  <!-- PROCESS -->
   <section>
     <div class="container">
       <h2>진행과정</h2>
@@ -105,6 +120,7 @@
     </div>
   </section>
 
+  <!-- FORM -->
   <section id="apply" class="form-area">
     <h2><strong style="color:#d50000">무료로</strong> 상담 신청하기</h2>
     <form id="leadForm">
@@ -151,6 +167,7 @@
     </form>
   </section>
 
+  <!-- FAQ -->
   <section class="faq">
     <div class="container">
       <h2>자주 받는 질문</h2>
@@ -203,7 +220,10 @@
   </footer>
 
   <script>
-    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxYOUR_DEPLOY_ID/exec"; // 교체 필요
+    // Apps Script 웹앱 URL을 여기에 붙여넣으세요.
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxYOUR_DEPLOY_ID/exec"; // TODO: 교체 필수
+
+    // 트래킹 메타 채우기 (주소가 길어지는 문제와 무관, 안전)
     const params = new URLSearchParams(location.search);
     const setVal = (id,v)=>{const el=document.getElementById(id); if(el) el.value=v||"";};
     setVal('utm_source', params.get('utm_source'));
@@ -213,6 +233,7 @@
     setVal('user_agent', navigator.userAgent);
     setVal('timestamp', new Date().toISOString());
 
+    // 제출 핸들러
     const form = document.getElementById('leadForm');
     const notice = document.getElementById('formNotice');
     form.addEventListener('submit', async (e)=>{
