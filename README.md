@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html>const SCRIPT_URL = "https://script.google.com/macros/s/여기에_웹앱_URL/exec";
+
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
